@@ -42,7 +42,7 @@ public class Payment1Controller {
     @ApiImplicitParams({
             @ApiImplicitParam(paramType = "query",dataType = "string",name = "id",value = "id",required = true)
     })
-    public CommonResult<Payment> getPaymentById(String id) {
+    public CommonResult<Payment> getPaymentById(@RequestParam("id") String id) {
         log.info("服务8082");
         Payment paymentById = payment1Service.getPaymentById(id);
         if (!ObjectUtils.isEmpty(paymentById)) {
@@ -50,5 +50,15 @@ public class Payment1Controller {
         } else {
             return new CommonResult<Payment>(400, "查询失败"+serverPort, null);
         }
+    }
+
+    @GetMapping("timeOut")
+    public String timeOut(){
+        try {
+            Thread.sleep(3000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+        return serverPort;
     }
 }

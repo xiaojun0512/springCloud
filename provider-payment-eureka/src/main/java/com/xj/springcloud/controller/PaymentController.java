@@ -48,7 +48,7 @@ public class PaymentController {
     @ApiImplicitParams({
             @ApiImplicitParam(paramType = "query",dataType = "string",name = "id",value = "id",required = true)
     })
-    public CommonResult<Payment> getPaymentById(String id) {
+    public CommonResult<Payment> getPaymentById(@RequestParam("id") String id) {
         log.info("服务8081");
         Payment paymentById = paymentService.getPaymentById(id);
         if (!ObjectUtils.isEmpty(paymentById)) {
@@ -71,5 +71,15 @@ public class PaymentController {
             log.info(instance.getInstanceId()+"\t"+instance.getHost()+"\t"+instance.getPort()+"\t"+instance.getUri());
         }
         return this.discoveryClient;
+    }
+
+    @GetMapping("timeOut")
+    public String timeOut(){
+        try {
+            Thread.sleep(3000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+        return serverPort;
     }
 }

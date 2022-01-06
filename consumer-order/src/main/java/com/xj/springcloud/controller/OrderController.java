@@ -3,6 +3,7 @@ package com.xj.springcloud.controller;
 import com.xj.springcloud.entity.Payment;
 import com.xj.springcloud.utils.CommonResult;
 import io.swagger.annotations.Api;
+import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.client.RestTemplate;
 
@@ -29,4 +30,13 @@ public class OrderController {
         return restTemplate.getForObject(PAYMENT_URL + "/payment/getPaymentById?id="+id, CommonResult.class);
     }
 
+    @GetMapping("getForEntityById")
+    public CommonResult getForEntity(String id){
+        ResponseEntity<CommonResult> entity = restTemplate.getForEntity(PAYMENT_URL + "/payment/getPaymentById?id=" + id, CommonResult.class);
+        if (entity.getStatusCode().is2xxSuccessful()){
+            return entity.getBody();
+        } else {
+            return new CommonResult(400,"操作失败");
+        }
+    }
 }
