@@ -18,6 +18,8 @@
       <module>provider-payment-consul</module>
       <module>consumer-order-consul</module>
       <module>consumer-order-feign</module>
+    <module>provider-payment-hystrix</module>
+      <module>consumer-order-feign-hystrix</module>
   </modules>
   <packaging>pom</packaging>
 
