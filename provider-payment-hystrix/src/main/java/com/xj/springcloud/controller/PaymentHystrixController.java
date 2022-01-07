@@ -29,4 +29,9 @@ public class PaymentHystrixController {
     public String get(@RequestParam("id") String id){
         return paymentHystrixService.get(id);
     }
+
+    @GetMapping("paymentCircuitBreaker")
+    public String paymentCircuitBreaker(@RequestParam("id") Integer id) {
+        return paymentHystrixService.paymentCircuitBreaker(id);
+    }
 }
