@@ -20,6 +20,7 @@
       <module>consumer-order-feign</module>
     <module>provider-payment-hystrix</module>
       <module>consumer-order-feign-hystrix</module>
+      <module>gateway</module>
   </modules>
   <packaging>pom</packaging>
 

@@ -1,6 +1,5 @@
 package com.xj.springcloud.service.impl;
 
-import com.netflix.hystrix.HystrixCommandProperties;
 import com.netflix.hystrix.contrib.javanica.annotation.HystrixCommand;
 import com.netflix.hystrix.contrib.javanica.annotation.HystrixProperty;
 import com.xj.springcloud.service.PaymentHystrixService;
