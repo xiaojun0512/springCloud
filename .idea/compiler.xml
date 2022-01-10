@@ -13,10 +13,12 @@
         <module name="consumer-order-hystrix-dashboard" />
         <module name="gateway" />
         <module name="provider-payment-eureka" />
+        <module name="config-center" />
         <module name="provider-payment-hystrix" />
         <module name="consumer-order-feign" />
         <module name="provider-payment-consul" />
         <module name="eureka-server" />
+        <module name="config-client" />
         <module name="commons" />
         <module name="eureka-server1" />
         <module name="consumer-order-consul" />
