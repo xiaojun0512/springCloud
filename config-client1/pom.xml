@@ -9,7 +9,7 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>config-center</artifactId>
+    <artifactId>config-client1</artifactId>
 
     <dependencies>
         <!--消息总线rabbitMq支持-->
@@ -19,7 +19,7 @@
         </dependency>
         <dependency>
             <groupId>org.springframework.cloud</groupId>
-            <artifactId>spring-cloud-config-server</artifactId>
+            <artifactId>spring-cloud-starter-config</artifactId>
         </dependency>
         <!--eureka client-->
         <dependency>

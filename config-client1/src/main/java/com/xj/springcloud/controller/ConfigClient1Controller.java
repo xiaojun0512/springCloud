@@ -9,7 +9,7 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 @RequestMapping("configClient")
 @RefreshScope
-public class ConfigClientController {
+public class ConfigClient1Controller {
     @Value("${config.info}")
     private String configInfo;
     @Value("${server.port}")

@@ -1,0 +1,8 @@
+http://localhost:3344/main/config-dev.yml
+            访问地址/分支/文件
+
+#发送刷新请求通知全部
+curl -X POST "http://localhost:3344/actuator/bus-refresh"
+
+#发送刷新请求通知指定服务           /cloud-config-client:3355指的是：cloud-config-client为spring.application.name，3355为端口号
+curl -X POST "http://localhost:3344/actuator/bus-refresh/cloud-config-client:3355"

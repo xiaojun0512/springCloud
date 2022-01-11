@@ -8,10 +8,10 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="provider-payment-eureka1" />
-        <module name="provider-payment-zookeeper" />
-        <module name="consumer-order" />
+        <module name="eureka-server1" />
         <module name="consumer-order-hystrix-dashboard" />
         <module name="gateway" />
+        <module name="config-client1" />
         <module name="provider-payment-eureka" />
         <module name="config-center" />
         <module name="provider-payment-hystrix" />
@@ -20,9 +20,10 @@
         <module name="eureka-server" />
         <module name="config-client" />
         <module name="commons" />
-        <module name="eureka-server1" />
         <module name="consumer-order-consul" />
+        <module name="consumer-order" />
         <module name="consumer-order-feign-hystrix" />
+        <module name="provider-payment-zookeeper" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
