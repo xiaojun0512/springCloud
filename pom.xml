@@ -24,6 +24,9 @@
       <module>config-center</module>
       <module>config-client</module>
       <module>config-client1</module>
+      <module>stream-rabbitmq-provider</module>
+    <module>stream-rabbitmq-consumer</module>
+    <module>stream-rabbitmq-consumer1</module>
   </modules>
   <packaging>pom</packaging>
 
