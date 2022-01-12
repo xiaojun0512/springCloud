@@ -39,4 +39,13 @@ public class OrderController {
             return new CommonResult(400,"操作失败");
         }
     }
+
+    /**
+     * 链路跟踪
+     * @return
+     */
+    @GetMapping("zipkin")
+    public String zipkin(){
+        return restTemplate.getForObject(PAYMENT_URL + "/payment/zipkin",String.class);
+    }
 }

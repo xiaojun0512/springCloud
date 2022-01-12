@@ -82,4 +82,13 @@ public class PaymentController {
         }
         return serverPort;
     }
+
+    /**
+     * 链路跟踪
+     * @return
+     */
+    @GetMapping("zipkin")
+    public String zipkin(){
+        return "zipkin + port:" + serverPort;
+    }
 }
