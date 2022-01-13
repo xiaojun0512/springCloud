@@ -27,10 +27,13 @@
       <module>stream-rabbitmq-provider</module>
     <module>stream-rabbitmq-consumer</module>
     <module>stream-rabbitmq-consumer1</module>
+    <module>alibaba-nacos-provider-payment</module>
+      <module>alibaba-nacos-provider-payment1</module>
+    <module>alibaba-nacos-consumer-order</module>
   </modules>
   <packaging>pom</packaging>
 
-  <name>Maven</name>
+  <name>parent</name>
   <!-- FIXME change it to the project's website -->
   <url>http://maven.apache.org/</url>
   <inceptionYear>2001</inceptionYear>
@@ -65,11 +68,11 @@
         <type>pom</type>
         <scope>import</scope>
       </dependency>
-      <!--spring cloud alibaba 2020.0.RC1-->
+      <!--spring cloud alibaba 2.2.7.RELEASE-->
       <dependency>
         <groupId>com.alibaba.cloud</groupId>
         <artifactId>spring-cloud-alibaba-dependencies</artifactId>
-        <version>2020.0.RC1</version>
+        <version>2.2.7.RELEASE</version>
         <type>pom</type>
         <scope>import</scope>
       </dependency>
