@@ -7,8 +7,9 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="alibaba-nacos-provider-payment1" />
         <module name="provider-payment-eureka1" />
+        <module name="alibaba-nacos-provider-payment1" />
+        <module name="provider-payment-consul" />
         <module name="consumer-order" />
         <module name="consumer-order-hystrix-dashboard" />
         <module name="gateway" />
@@ -17,19 +18,18 @@
         <module name="provider-payment-eureka" />
         <module name="config-center" />
         <module name="provider-payment-hystrix" />
-        <module name="consumer-order-feign-hystrix" />
-        <module name="config-client" />
+        <module name="alibaba-sentinel-service" />
         <module name="consumer-order-feign" />
-        <module name="provider-payment-consul" />
+        <module name="stream-rabbitmq-consumer" />
         <module name="eureka-server" />
-        <module name="stream-rabbitmq-provider" />
+        <module name="config-client" />
         <module name="commons" />
         <module name="eureka-server1" />
         <module name="consumer-order-consul" />
         <module name="stream-rabbitmq-consumer1" />
         <module name="alibaba-nacos-consumer-order" />
-        <module name="stream-rabbitmq-consumer" />
-        <module name="alibaba-sentinel-service" />
+        <module name="consumer-order-feign-hystrix" />
+        <module name="stream-rabbitmq-provider" />
         <module name="alibaba-nacos-config-client" />
         <module name="provider-payment-zookeeper" />
       </profile>
